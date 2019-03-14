@@ -12,13 +12,11 @@ public class GamePieceAppearance
 	
 	public Color getColor()
 	{
-		
-		return null; //TODO Stubbed
+		return color;
 	}
 	
 	public Shape getShape()
 	{
-		
-		return null; //TODO Stubbed
+		return shape;
 	}
 }
