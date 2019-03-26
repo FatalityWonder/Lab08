@@ -1,22 +1,30 @@
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-class GamePieceAppearanceTest {
+class GamePieceAppearanceTest 
+{
 
 	@Test
-	void testGamePieceAppearance() {
-		fail("Not yet implemented");
+	void testGamePieceAppearance() 
+	{
+		GamePieceAppearance piece = new GamePieceAppearance(Color.RED, Shape.RACECAR);
+		Assert.assertEquals("Constructor not working properly", piece.getColor(), Color.RED);
+		Assert.assertEquals("Constructor not working properly", piece.getShape(), Shape.RACECAR);
+
 	}
 
 	@Test
-	void testGetColor() {
-		fail("Not yet implemented");
+	void testGetColor() 
+	{
+		GamePieceAppearance piece = new GamePieceAppearance(Color.BLUE, Shape.RACECAR);
+		Assert.assertEquals("getColor not working properly", piece.getColor(), Color.BLUE);
 	}
 
 	@Test
-	void testGetShape() {
-		fail("Not yet implemented");
+	void testGetShape() 
+	{
+		GamePieceAppearance piece = new GamePieceAppearance(Color.RED, Shape.RACECAR);
+		Assert.assertEquals("getShape not working properly", piece.getShape(), Shape.RACECAR);
 	}
 
 }

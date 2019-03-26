@@ -1,12 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 class ShapeTest {
 
 	@Test
-	void testToString() {
-		fail("Not yet implemented");
+	void testToString() 
+	{
+		Assert.assertEquals("Shape toString incorrect", "thimble", Shape.THIMBLE.toString());
+		
+		Assert.assertEquals("Shape toString incorrect", "boot", Shape.BOOT.toString());
+		
+		Assert.assertEquals("Shape toString incorrect", "racecar", Shape.RACECAR.toString());
 	}
 
 }
