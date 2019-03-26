@@ -49,30 +49,32 @@ public class BoardGame
 	public String[] moveTwoPlayers(String[] playerNames, Location[] newLocations)
 	{
 		GamePiece first = GamePiece.movesFirst(playerPieces.get(playerNames[0]), playerPieces.get(playerNames[1]));
-		GamePiece second;
 		Location firstloc;
 		Location secondloc;
+		String firstNam;
+		String secondNam;
 		String[] players = new String[2];
 		
 		if (first.equals(playerPieces.get(playerNames[0])))
 		{
-			second = playerPieces.get(playerNames[1]);
 			secondloc = playerLocation.get(playerNames[1]);
+			secondNam = playerNames[1];
 			firstloc = playerLocation.get(playerNames[0]);
+			firstNam = playerNames[0];
 		}
 		else
 		{
-			second = playerPieces.get(playerNames[0]);
 			secondloc = playerLocation.get(playerNames[0]);
+			secondNam = playerNames[0];
 			firstloc = playerLocation.get(playerNames[1]);
+			firstNam = playerNames[1];
 		}
 		
-		players[0] = getPlayerWithGamePiece(first);
-		playerLocation.put(players[0], newLocations[0]);
+		playerLocation.put(firstNam, firstloc);
+		players[0] = firstNam;
 		
-		players[1] = getPlayerWithGamePiece(first);
-		
-		
+		playerLocation.put(secondNam, secondloc);
+		players[1] = secondNam;
 		
 		return players;
 	}
