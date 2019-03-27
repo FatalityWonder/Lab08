@@ -1,30 +1,30 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class GamePieceAppearanceTest 
+public class GamePieceAppearanceTest 
 {
 
 	@Test
-	void testGamePieceAppearance() 
+	public void testGamePieceAppearance() 
 	{
 		GamePieceAppearance piece = new GamePieceAppearance(Color.RED, Shape.RACECAR);
-		Assert.assertEquals("Constructor not working properly", piece.getColor(), Color.RED);
-		Assert.assertEquals("Constructor not working properly", piece.getShape(), Shape.RACECAR);
+		Assert.assertEquals("Constructor not working properly", Color.RED, piece.getColor());
+		Assert.assertEquals("Constructor not working properly", Shape.RACECAR, piece.getShape());
 
 	}
 
 	@Test
-	void testGetColor() 
+	public void testGetColor() 
 	{
 		GamePieceAppearance piece = new GamePieceAppearance(Color.BLUE, Shape.RACECAR);
-		Assert.assertEquals("getColor not working properly", piece.getColor(), Color.BLUE);
+		Assert.assertEquals("getColor not working properly", Color.BLUE, piece.getColor());
 	}
 
 	@Test
-	void testGetShape() 
+	public void testGetShape() 
 	{
 		GamePieceAppearance piece = new GamePieceAppearance(Color.RED, Shape.RACECAR);
-		Assert.assertEquals("getShape not working properly", piece.getShape(), Shape.RACECAR);
+		Assert.assertEquals("getShape not working properly", Shape.RACECAR, piece.getShape());
 	}
 
 }

@@ -1,10 +1,10 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class ShapeTest {
+public class ShapeTest { 
 
 	@Test
-	void testToString() 
+	public void testToString() 
 	{
 		Assert.assertEquals("Shape toString incorrect", "thimble", Shape.THIMBLE.toString());
 		

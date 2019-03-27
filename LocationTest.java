@@ -1,10 +1,10 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class LocationTest {
+public class LocationTest {
 
 	@Test
-	void test() {
+	public void test() {
 		Assert.assertEquals("Location enum values incorrect", Location.KITCHEN, Location.valueOf("KITCHEN"));
 		
 		Assert.assertEquals("Location enum values incorrect", Location.CONSERVATORY, Location.valueOf("CONSERVATORY"));

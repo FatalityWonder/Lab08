@@ -1,11 +1,11 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class ColorTest 
+public class ColorTest  
 {
 
 	@Test
-	void testGetR() 
+	public void testGetR() 
 	{
 		Color color = null ;
 		
@@ -29,7 +29,7 @@ class ColorTest
 	}
 
 	@Test
-	void testGetG() 
+	public void testGetG() 
 	{
 		Color color = null ;
 		
@@ -53,7 +53,7 @@ class ColorTest
 	}
 
 	@Test
-	void testGetB() 
+	public void testGetB() 
 	{
 		Color color = null ;
 		
